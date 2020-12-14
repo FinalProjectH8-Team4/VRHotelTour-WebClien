@@ -19,7 +19,7 @@ function App() {
           <Route path='/facility/:idx'>
             <FacilityDetail />
           </Route>
-          <Route path='/room'>
+          <Route path='/room/:roomType'>
             <RoomDetail />
           </Route>
         </Switch>

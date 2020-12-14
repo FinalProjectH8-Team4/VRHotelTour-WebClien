@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import HotelDetail from './HotelDetail'
 
-function Home() {
+export default function Home() {
 
   return (
     <div>
@@ -93,7 +94,7 @@ function Home() {
             </img>
             <h2>Superior Room King </h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn text-light" style={{ backgroundColor: '#08a0fc' }} href="#" role="button">View details »</a></p>
+            <p><Link class="btn text-light" style={{ backgroundColor: '#08a0fc' }} to='/room/superior' role="button">View details »</Link></p>
           </div>
           {/* component end */}
           <div class="col-lg-4 mt-3 mb-3">
@@ -108,7 +109,7 @@ function Home() {
             </img>
             <h2>Superior Room Twin </h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn text-light" style={{ backgroundColor: '#08a0fc' }} href="#" role="button">View details »</a></p>
+            <p><Link class="btn text-light" style={{ backgroundColor: '#08a0fc' }} to='/room/superior' role="button">View details »</Link></p>
           </div>
           <div class="col-lg-4 mt-3 mb-3">
             <img
@@ -145,4 +146,3 @@ function Home() {
   )
 }
 
-export default Home
