@@ -6,20 +6,21 @@ import store from './store'
 import FacilityDetail from './pages/FacilityDetail'
 import HotelDetail from './pages/HotelDetail'
 import RoomDetail from './pages/RoomDetail'
+import Home from './pages/Home';
 
 function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
         <Switch>
+          <Route path='/' exact>
+            <Home />
+          </Route>
           <Route path='/facility/:idx'>
             <FacilityDetail />
           </Route>
           <Route path='/room'>
             <RoomDetail />
-          </Route>
-          <Route path='/'>
-            <HotelDetail />
           </Route>
         </Switch>
       </BrowserRouter>
