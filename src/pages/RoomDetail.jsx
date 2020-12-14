@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 
 export default function RoomDetail() {
@@ -20,6 +20,8 @@ export default function RoomDetail() {
       <h1>{roomTitle}</h1>
       <hr />
       <iframe src={vrURL} width='100%' height='80%' frameborder="0"></iframe>
+      
+      <Link to='/bookroom/superior' className="btn btn-primary">Book This Room</Link>
     </Container>
   )
 }
