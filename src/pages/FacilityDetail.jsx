@@ -3,17 +3,24 @@ import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
+import {useHistory} from 'react-router-dom'
 
 export default function FacilityDetail() {
+    const history = useHistory()
     const hotel = useSelector((state) => state.hotel)
     const { idx } = useParams()
     const facility = hotel.facilities[idx]
+
+    function homeBtn(){
+        history.push('/')
+    }
 
     if (!hotel.facilities) {
         return (
             <Container>
                 <h1>OOPSS... BACK TO HOME</h1>
+                <Button type='button' onClick={homeBtn}>Home</Button>
             </Container>
         )
     }
@@ -21,9 +28,11 @@ export default function FacilityDetail() {
         return (
             <Container>
                 <h1>OOPSS... NOT FOUND</h1>
+                <Button type='button' onClick={homeBtn}>Home</Button>
             </Container>
         )
     }
+    
     return (
         <Container>
             <h1 className='text-center'>{facility.name}</h1>
@@ -46,6 +55,7 @@ export default function FacilityDetail() {
                 <h2>Description : </h2>
                 <p>{facility.description}</p>
             </Container>
+            <Button type='button' onClick={homeBtn}>Home</Button>
         </Container>
     )
 }

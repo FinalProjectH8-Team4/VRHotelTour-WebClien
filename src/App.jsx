@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import store from './store'
 import FacilityDetail from './pages/FacilityDetail'
 import HotelDetail from './pages/HotelDetail'
+import RoomDetail from './pages/RoomDetail'
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         <Switch>
           <Route path='/facility/:idx'>
             <FacilityDetail />
+          </Route>
+          <Route path='/room'>
+            <RoomDetail />
           </Route>
           <Route path='/'>
             <HotelDetail />
