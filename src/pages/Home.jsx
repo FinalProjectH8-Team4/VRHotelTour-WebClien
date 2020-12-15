@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import HotelDetail from './HotelDetail'
-import { Tab, Tabs, Col, Row, Nav, Container, Button } from 'react-bootstrap'
+import { Tab, Col, Row, Nav, Container, Button } from 'react-bootstrap'
 
 export default function Home() {
   const history = useHistory()
@@ -22,10 +22,10 @@ export default function Home() {
                 <hr />
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'relative' }}>
-                    <img src="https://cf.bstatic.com/images/hotel/max1024x768/107/107656497.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%" }} />
+                    <img src="https://cf.bstatic.com/images/hotel/max1024x768/107/107656497.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
                   </div>
                   <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', bottom: 0, zIndex: 99, width: '100%', height: '100%' }}>
-                    <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('superior')} block>360 View</Button>
+                    <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('superior')} block>Book This Room</Button>
                   </div>
                 </div>
               </Tab.Pane>
@@ -34,10 +34,10 @@ export default function Home() {
                 <hr />
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'relative' }}>
-                    <img src="https://origin.pegipegi.com/jalan/images/pict1L/Y4/Y993154/X993154006.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%" }} />
+                    <img src="https://origin.pegipegi.com/jalan/images/pict1L/Y4/Y993154/X993154006.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
                   </div>
                   <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', bottom: 0, zIndex: 99, width: '100%', height: '100%' }}>
-                    <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('deluxe')} block>360 View</Button>
+                    <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('deluxe')} block>Book This Room</Button>
                   </div>
                 </div>
               </Tab.Pane>
@@ -46,10 +46,10 @@ export default function Home() {
                 <hr />
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'relative' }}>
-                    <img src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002262-1540x1024-FIT_AND_TRIM-8e6275bc722007a72588ccc2f6d7b978.jpeg?tr=q-40,c-at_max,w-740,h-500&_src=imagekit" class="d-block w-100" alt="..." style={{ height: 400, width: "100%" }} />
+                    <img src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002262-1540x1024-FIT_AND_TRIM-8e6275bc722007a72588ccc2f6d7b978.jpeg?tr=q-40,c-at_max,w-740,h-500&_src=imagekit" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
                   </div>
                   <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', bottom: 0, zIndex: 99, width: '100%', height: '100%' }}>
-                    <Button type='button' variant="outline-light" size='lg' className='fw-bold' block>360 View</Button>
+                    <Button type='button' variant="outline-light" size='lg' className='fw-bold' block>Book This Room</Button>
                   </div>
                 </div>
               </Tab.Pane>
@@ -98,7 +98,7 @@ export default function Home() {
 
       <HotelDetail />
       
-      <Container className='bg-dark mt-5 text-white p-3'>
+      <Container className='bg-dark mt-5 text-white p-3' style={{ borderTopLeftRadius:10, borderTopRightRadius:10}}>
         <div className='text-center'>
           <b>Adress</b>
           <small className='mx-1'>Jl. Senen Raya No.135, RW.2, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410  </small>

@@ -29,7 +29,7 @@ export default function HotelDetail() {
   return (
     <Container>
       {/* <p>{JSON.stringify(hotel.facilities)}</p> */}
-      <Container className='text-center' style={{ backgroundColor: '#ddd' }}>
+      <Container className='text-center p-5' style={{ backgroundColor: '#eee', borderRadius:10 }}>
         <h2>Hotel Facilities</h2>
         <hr/>
         <Container className='d-flex align-content-start flex-wrap'>
