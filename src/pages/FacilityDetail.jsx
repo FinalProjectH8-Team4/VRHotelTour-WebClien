@@ -10,7 +10,10 @@ export default function FacilityDetail() {
   const history   = useHistory()
   const hotel     = useSelector((state) => state.hotel)
   const { idx }   = useParams()
-  const facility  = hotel.facilities[idx]
+  let facility
+  if(hotel.facilities){
+    facility = hotel.facilities[idx]
+  }
 
   function homeBtn() {
     history.push('/')
@@ -19,8 +22,8 @@ export default function FacilityDetail() {
   if (!hotel.facilities) {
     return (
       <Container>
-        <h1>OOPSS... BACK TO HOME</h1>
-        <Button type='button' onClick={homeBtn}>Home</Button>
+        <h1>OOPSS... SOMETHING WRONG, BACK TO HOME PAGE!</h1>
+        <Button type='button' block onClick={homeBtn}>Home</Button>
       </Container>
     )
   }
@@ -28,7 +31,7 @@ export default function FacilityDetail() {
     return (
       <Container>
         <h1>OOPSS... NOT FOUND</h1>
-        <Button type='button' onClick={homeBtn}>Home</Button>
+        <Button type='button' block onClick={homeBtn}>Home</Button>
       </Container>
     )
   }
@@ -55,7 +58,7 @@ export default function FacilityDetail() {
         <h2>Description : </h2>
         <p>{facility.description}</p>
       </Container>
-      <Button type='button' onClick={homeBtn}>Home</Button>
+      <Button block type='button' onClick={homeBtn}>Home</Button>
     </Container>
   )
 }

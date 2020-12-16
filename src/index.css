@@ -10,11 +10,56 @@ body {
 
 html, #root{
   height: 100%;
+  margin-top: 40px;
 }
 
 .full-height {
   height: 100%;
 }
+
+.inepinn-color {
+  background-color: #ee8b74;
+}
+
+.black-white{
+  filter:invert(1)
+}
+
+.nav-pills .nav-link.active, .nav-pills .show .nav-link {
+  background-color: #ee8b74 !important;
+  border-radius: 10;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a.nav-link{
+  color: #ee8b74;
+  font-size: 20px;
+  border-radius: 10;
+  border-bottom: 5px solid transparent;
+  transition: 500ms;
+}
+
+a.nav-link:hover{
+  color: #a76353;
+  border-bottom: 5px solid #ee8b74;
+  border-radius: 10;
+}
+
+h1{
+  color: #4B3171;
+  font-weight: bolder;
+}
+
+.btn-primary{
+  background-color: #ee8b74 !important;
+  border-color: #ee8b74 !important;
+}
+
+.btn-primary:hover{
+  background-color: #e95d3d !important;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
