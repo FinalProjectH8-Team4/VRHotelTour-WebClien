@@ -37,10 +37,17 @@ export default function FacilityDetail() {
   }
 
   return (
-    <Container className="mb-5">
-      <h4 className='text-center' style={{color: '#4d3572'}}>{facility.name}</h4>
-      <hr />
-      <Container className='pt-3'>
+    <div
+    style={{
+      background: 
+      `linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(82, 58, 115, 1), rgba(35, 8, 53, 1))`,
+      height: '75vh', 
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "100% 100%",
+      backgroundAttachment:"fixed"}}
+    >
+      <div>
         <Carousel
           infiniteLoop={true}
           interval={2000}
@@ -53,13 +60,12 @@ export default function FacilityDetail() {
             </div>
           ))}
         </Carousel>
-      </Container>
-      <Container>
-        <h2>Description : </h2>
-        <p>{facility.description}</p>
-      </Container>
-      <Button block type='button' onClick={homeBtn}>Home</Button>
-    </Container>
+      </div>
+      <div className="ml-5 mr-5">
+        <h5 className='text-left' style={{color: '#4d3572', fontWeight: 'bold'}}>{facility.name}</h5>
+        <p style={{fontSize: 12}}>{facility.description}</p>
+      </div>
+    </div>
   )
 }
 

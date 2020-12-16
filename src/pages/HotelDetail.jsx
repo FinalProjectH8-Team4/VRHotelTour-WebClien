@@ -27,18 +27,12 @@ export default function HotelDetail() {
     )
   }
   return (
-    <Container>
-      {/* <p>{JSON.stringify(hotel.facilities)}</p> */}
-      <Container className='text-center p-5' style={{ backgroundColor: '#eee', borderRadius:10 }}>
-        <h2>Hotel Facilities</h2>
-        <hr/>
-        <Container className='d-flex align-content-start flex-wrap'>
-          {hotel.facilities.map((facility, index) => (
-            // <Button onClick={() => facilitiesClick(index)} >{facility.name}</Button>
-            <FacilitiesIcon key={index} name={facility.name} index={index} facilitiesClick={facilitiesClick}/>
-          ))}
-        </Container>
-      </Container>
-    </Container>
+    <div className="ml-5 mr-5 mt-3" style={{justifyContent: 'flex-start', alignItems: 'flex-start'}}>
+      <div className='d-flex justify-content-center'>
+        {hotel.facilities.map((facility, index) => (
+          <FacilitiesIcon key={index} name={facility.name} index={index} facilitiesClick={facilitiesClick}/>
+        ))}
+      </div>
+    </div>
   )
 }
