@@ -19,7 +19,7 @@ export default function Home() {
               <Tab.Pane eventKey="superior">
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'relative' }}>
-                    <img src="https://cf.bstatic.com/images/hotel/max1024x768/107/107656497.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%" }} />
+                    <img src="https://hdrihaven.com/files/hdri_images/tonemapped/1500/hotel_room.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%" }} />
                   </div>
                   <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', bottom: 0, zIndex: 99, width: '100%', height: '100%' }}>
                     <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('superior')} block >Book This Room</Button>
@@ -30,7 +30,7 @@ export default function Home() {
               <Tab.Pane eventKey="deluxe">
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'relative' }}>
-                    <img src="https://origin.pegipegi.com/jalan/images/pict1L/Y4/Y993154/X993154006.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
+                    <img src="https://www.samrohn.com/wp-content/uploads/le-meridien-bedroom-panorama.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
                   </div>
                   <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', bottom: 0, zIndex: 99, width: '100%', height: '100%' }}>
                     <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('deluxe')} block>Book This Room</Button>
@@ -41,7 +41,7 @@ export default function Home() {
               <Tab.Pane eventKey="premier">
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'relative' }}>
-                    <img src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002262-1540x1024-FIT_AND_TRIM-8e6275bc722007a72588ccc2f6d7b978.jpeg?tr=q-40,c-at_max,w-740,h-500&_src=imagekit" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
+                    <img src="https://1.bp.blogspot.com/-BCozCFZE7pg/XDIP0rJPFcI/AAAAAAAAAO0/vSFFbJgHKRcXDSiUCURHp41Eaix91qMyQCKgBGAs/s1600/HDRI-Hotel-Room.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
                   </div>
                   <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', bottom: 0, zIndex: 99, width: '100%', height: '100%' }}>
                     <Button type='button' variant="outline-light" size='lg' className='fw-bold' block>Book This Room</Button>

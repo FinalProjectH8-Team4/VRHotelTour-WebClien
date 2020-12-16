@@ -7,21 +7,22 @@ import store from './store'
 import FacilityDetail from './pages/FacilityDetail'
 import RoomDetail from './pages/RoomDetail'
 import Home from './pages/Home';
+import Test from './pages/test'
 
 function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Nav className="justify-content-center fixed-top" style={{backgroundColor: '#4d3572'}}>
+        <Nav className="justify-content-start fixed-top" style={{backgroundColor: '#503B75'}}>
           <Nav.Item as={Link} to='/'>
-            <div className="d-flex flex-row mt-3">
+            <div className="d-flex flex-row mt-3 ml-5">
               <h2 style={{fontStyle: 'italic', color: 'white'}}>Inep</h2><h2 style={{fontWeight: 'bold', color: 'white'}}>Inn</h2>
             </div>
           </Nav.Item>
         </Nav>
         <Switch>
           <Route path='/' exact>
-            <Home />
+            <Test />
           </Route>
           <Route path='/facility/:idx'>
             <FacilityDetail />
