@@ -59,8 +59,16 @@ h1{
 .btn-primary:hover{
   background-color: #e95d3d !important;
 }
-
-
+.gambar-facilities{
+  height: 120px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.fitness-gambar{
+  height: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
