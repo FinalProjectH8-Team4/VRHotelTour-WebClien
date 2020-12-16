@@ -40,7 +40,7 @@ export default function FacilityDetail() {
     <div
     style={{
       background: 
-      `linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(82, 58, 115, 1), rgba(35, 8, 53, 1))`,
+      `linear-gradient(to top right, rgba(245, 246, 252, 0.52), rgba(82, 58, 115, 1), rgba(35, 8, 53, 1))`,
       height: '75vh', 
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",

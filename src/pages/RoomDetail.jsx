@@ -21,23 +21,31 @@ export default function RoomDetail() {
   }
   
   return (
-    <div className='full-height row'>
-      <div className="column">
-        {error &&
-              <div className="alert alert-danger" role="alert">
-                {error}
-              </div>
-            }
-        <iframe src={`https://hotelimage.s3-ap-southeast-1.amazonaws.com/${roomType}/room.html`} width='50%' height='80%' frameborder="0"></iframe>
-        <h5 className="mt-2">Room Facilities Included</h5>
+    <div style={{height: '100vh'}}>
+      <div className='full-height row'>
+        <div className="col-9">
+          {error &&
+                <div className="alert alert-danger" role="alert">
+                  {error}
+                </div>
+              }
+          <iframe src={`https://hotelimage.s3-ap-southeast-1.amazonaws.com/${roomType}/room.html`} width='100%' height='100%' frameborder="0"></iframe>
+        </div>
+        <div className="col-3 justify-content-center">
+          <p className="mt-3 ml-5" style={{fontSize: 12}}>Enter your email to book this room</p>
+          <input 
+            type='email' 
+            className='mb-2 ml-4 form-control' 
+            name='emailAddress' 
+            placeholder='Enter your email address...' 
+            onChange={(e) => setEmail(e.target.value)} 
+            style={{width: "80%", height: 35, borderColor: '#231535'}}
+          />
+          <Button onClick={bookHandler} className="ml-4" style={{width: "80%"}}>Book This Room</Button>
+          <h5 className="mt-3 text-center">Facilities Included</h5>
+          <Icons/>
+        </div>
       </div>
-      <Icons/>
-      
-
-      <input type='email' className='mt-5 mb-3 form-control form-control-lg' name='emailAddress' placeholder='Enter your email address' onChange={(e) => setEmail(e.target.value)} />
-      <Button onClick={bookHandler} block >Book This Room</Button>
-      <h1> . . .</h1>
-     
     </div>
   )
 }

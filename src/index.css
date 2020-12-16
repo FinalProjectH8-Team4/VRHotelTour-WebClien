@@ -63,14 +63,12 @@ h1{
   background-color: #4d3572 !important;
 }
 .gambar-facilities{
-  height: 120px;
-  margin-top: auto;
-  margin-bottom: auto;
+  height: 30px;
+  width: 40px;
 }
 .fitness-gambar{
-  height: 80px;
-  margin-top: auto;
-  margin-bottom: auto;
+  height: 30px;
+  width: 55px
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
