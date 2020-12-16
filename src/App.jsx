@@ -12,10 +12,10 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Nav className="justify-content-center fixed-top bg-white">
+        <Nav className="justify-content-center fixed-top" style={{backgroundColor: '#4d3572'}}>
           <Nav.Item as={Link} to='/'>
             <div className="d-flex flex-row mt-3">
-              <h2 style={{fontStyle: 'italic', color: '#4d3572'}}>Inep</h2><h2 style={{fontWeight: 'bold', color: '#4d3572'}}>Inn</h2>
+              <h2 style={{fontStyle: 'italic', color: 'white'}}>Inep</h2><h2 style={{fontWeight: 'bold', color: 'white'}}>Inn</h2>
             </div>
           </Nav.Item>
         </Nav>

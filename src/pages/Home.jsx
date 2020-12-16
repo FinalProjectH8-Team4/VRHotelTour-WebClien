@@ -11,12 +11,11 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div style={{backgroundColor: '#4d3572', height: '70%'}}>
       <Container>
         <Tab.Container id="left-tabs-example" defaultActiveKey="superior">
           <Row>
             <Tab.Content>
-              {/* Tab Pane bisa di looping */}
               <Tab.Pane eventKey="superior">
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'relative' }}>
@@ -49,11 +48,10 @@ export default function Home() {
                   </div>
                 </div>
               </Tab.Pane>
-        
             </Tab.Content>
           </Row>
-          <Row>
-            {/* Col-Nav bisa di looping */}
+
+          <Row >
             <Col>
               <Nav variant="pills" className="flex-column text-center">
                 <Nav.Item>
@@ -82,12 +80,14 @@ export default function Home() {
 
       {/* Description */}
       <Container className='mt-5 mb-5 text-center'>
-        <h3 className="mb-3">Lumire Hotel And Convention Center</h3>
+        <h3 className="mb-3">InepInn Hotel</h3>
         <div>
           <small>
-            Enjoy an exceptional stay in the Jakarta city center at Lumire Hotel and Convention Center. Boasting 343 contemporary rooms and suites in the heart of the bustling Senen financial and commercial district, our 4-star hotel offers a one-stop destination for business and holiday stays. From the hotel, it’s just a 10-minute drive to Government Offices, Business District, Chinatown and a short walk to the National Monument (Monas) and Mall.
-            In addition to room and suite accommodation, fully equipped to meet the needs of the modern corporate and leisure traveler. Featuring a Balinese-style indoor swimming pool, Fitness and Spa, private Executive Lounge, eleven sophisticated event venues and three distinctive dining and entertainment options.
-            On your next trip to Jakarta, Indonesia, experience gracious hospitality in a convenient central location. We look forward to welcoming you to Lumire Hotel and Convention Center Jakarta.
+            Enjoy an exceptional stay in the Jakarta city center. Boasting 343 contemporary rooms and suites in the heart of the bustling 
+            financial and commercial district, our hotel offers a one-stop destination for business and holiday stays. In addition to room 
+            and suite accommodation, fully equipped to meet the needs of the modern corporate and leisure traveler. 
+            Featuring indoor swimming pool, Fitness and Spa, private Executive Lounge, eleven sophisticated event venues and three 
+            distinctive dining and entertainment options. On your next trip to Jakarta, Indonesia, experience gracious hospitality in a convenient central location.
           </small>
         </div>
       </Container>
