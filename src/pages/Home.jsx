@@ -18,20 +18,17 @@ export default function Home() {
             <Tab.Content>
               {/* Tab Pane bisa di looping */}
               <Tab.Pane eventKey="superior">
-                <h1 className='text-center'>SUPERIOR CLASS</h1>
-                <hr />
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'relative' }}>
-                    <img src="https://cf.bstatic.com/images/hotel/max1024x768/107/107656497.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
+                    <img src="https://cf.bstatic.com/images/hotel/max1024x768/107/107656497.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%" }} />
                   </div>
                   <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', bottom: 0, zIndex: 99, width: '100%', height: '100%' }}>
-                    <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('superior')} block>Book This Room</Button>
+                    <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('superior')} block >Book This Room</Button>
                   </div>
                 </div>
               </Tab.Pane>
+
               <Tab.Pane eventKey="deluxe">
-                <h1 className='text-center'>DELUXE CLASS</h1>
-                <hr />
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'relative' }}>
                     <img src="https://origin.pegipegi.com/jalan/images/pict1L/Y4/Y993154/X993154006.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
@@ -41,9 +38,8 @@ export default function Home() {
                   </div>
                 </div>
               </Tab.Pane>
+
               <Tab.Pane eventKey="premier">
-                <h1 className='text-center'>PREMIER TWIN CLASS</h1>
-                <hr />
                 <div style={{ position: 'relative' }}>
                   <div style={{ position: 'relative' }}>
                     <img src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10002262-1540x1024-FIT_AND_TRIM-8e6275bc722007a72588ccc2f6d7b978.jpeg?tr=q-40,c-at_max,w-740,h-500&_src=imagekit" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
@@ -53,7 +49,7 @@ export default function Home() {
                   </div>
                 </div>
               </Tab.Pane>
-              {/* Tab Pane END */}
+        
             </Tab.Content>
           </Row>
           <Row>
@@ -98,14 +94,14 @@ export default function Home() {
 
       <HotelDetail />
       
-      <Container className='bg-dark mt-5 text-white p-3' style={{ borderTopLeftRadius:10, borderTopRightRadius:10}}>
+      <div className='mt-5 text-white p-3' style={{ width: '100%', backgroundColor: '#726191' }}>
         <div className='text-center'>
           <b>Adress</b>
           <small className='mx-1'>Jl. Senen Raya No.135, RW.2, Senen, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10410  </small>
           <b>Phone</b>
           <small className='mx-1'>(021) 3442828</small>
         </div>
-      </Container>
+      </div>
 
     </div>
   )

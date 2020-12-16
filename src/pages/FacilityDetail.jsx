@@ -37,10 +37,10 @@ export default function FacilityDetail() {
   }
 
   return (
-    <Container>
-      <h1 className='text-center'>{facility.name}</h1>
+    <Container className="mb-5">
+      <h4 className='text-center' style={{color: '#4d3572'}}>{facility.name}</h4>
       <hr />
-      <Container className='pt-3' style={{ backgroundColor: '#dddddd' }}>
+      <Container className='pt-3'>
         <Carousel
           infiniteLoop={true}
           interval={2000}

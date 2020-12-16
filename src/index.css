@@ -18,7 +18,7 @@ html, #root{
 }
 
 .inepinn-color {
-  background-color: #ee8b74;
+  background-color: #4d3572;
 }
 
 .black-white{
@@ -26,14 +26,14 @@ html, #root{
 }
 
 .nav-pills .nav-link.active, .nav-pills .show .nav-link {
-  background-color: #ee8b74 !important;
+  background-color: #726191 !important;
   border-radius: 10;
   font-size: 20px;
   font-weight: bold;
 }
 
 a.nav-link{
-  color: #ee8b74;
+  color: #4d3572;
   font-size: 20px;
   border-radius: 10;
   border-bottom: 5px solid transparent;
@@ -41,8 +41,8 @@ a.nav-link{
 }
 
 a.nav-link:hover{
-  color: #a76353;
-  border-bottom: 5px solid #ee8b74;
+  color: #4d3572;
+  border-bottom: 5px solid #4d3572;
   border-radius: 10;
 }
 
@@ -52,15 +52,23 @@ h1{
 }
 
 .btn-primary{
-  background-color: #ee8b74 !important;
-  border-color: #ee8b74 !important;
+  background-color: #4d3572 !important;
+  border-color: #4d3572!important;
 }
 
 .btn-primary:hover{
-  background-color: #e95d3d !important;
+  background-color: #4d3572 !important;
 }
-
-
+.gambar-facilities{
+  height: 120px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.fitness-gambar{
+  height: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

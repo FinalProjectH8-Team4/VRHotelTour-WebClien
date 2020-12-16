@@ -2,7 +2,6 @@ import { Provider } from 'react-redux'
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav } from 'react-bootstrap'
-
 import logo from './assets/inepinn-logo.png'
 import store from './store'
 import FacilityDetail from './pages/FacilityDetail'
@@ -15,12 +14,9 @@ function App() {
       <BrowserRouter>
         <Nav className="justify-content-center fixed-top bg-white">
           <Nav.Item as={Link} to='/'>
-          <img
-              src={logo}
-              height="70"
-              className="d-inline-block align-center"
-              alt="InepInn"
-            />
+            <div className="d-flex flex-row mt-3">
+              <h2 style={{fontStyle: 'italic', color: '#4d3572'}}>Inep</h2><h2 style={{fontWeight: 'bold', color: '#4d3572'}}>Inn</h2>
+            </div>
           </Nav.Item>
         </Nav>
         <Switch>
