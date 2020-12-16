@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3001'
+const baseUrl = 'http://13.212.173.127:3001'
 
 export function fetchHotelById(id) {
   return (dispatch) => {

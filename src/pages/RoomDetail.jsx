@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { bookRoom } from "../store/actions/actionHotel"
 import {Button} from 'react-bootstrap'
 import Icons from '../components/icons'
@@ -11,6 +11,7 @@ export default function RoomDetail() {
   const { roomType } = useParams()
   const [userEmail, setEmail] = useState("")
   const [error, setError] = useState("")
+  const hotel = useSelector(state=>state.hotel)
 
   function bookHandler() {
     if (!userEmail) {
@@ -20,6 +21,14 @@ export default function RoomDetail() {
     }
   }
   
+  useEffect(()=>{
+    console.log(hotel,'dari bookrom');
+  },[])
+
+  function getRoomPrice(){
+    return hotel.room_type.filter(item=> item.type=== roomType)[0].price
+  }
+
   return (
     <div style={{height: '100vh'}}>
       <div className='full-height row'>
@@ -29,9 +38,12 @@ export default function RoomDetail() {
                   {error}
                 </div>
               }
-          <iframe src={`https://hotelimage.s3-ap-southeast-1.amazonaws.com/${roomType}/room.html`} width='100%' height='100%' frameborder="0"></iframe>
+          <iframe src={`http://hotelimage.s3-ap-southeast-1.amazonaws.com/${roomType}/room.html`} width='100%' height='100%' frameborder="0"></iframe>
         </div>
         <div className="col-3 justify-content-center">
+          <h4 className='mt-5'>Room Informations</h4>
+          <p style={{textTransform:'capitalize'}}>Type : {roomType} Room</p>
+          <p style={{textTransform:'capitalize'}}>Price : Rp. {getRoomPrice()}</p>
           <p className="mt-3 ml-5" style={{fontSize: 12}}>Enter your email to book this room</p>
           <input 
             type='email' 

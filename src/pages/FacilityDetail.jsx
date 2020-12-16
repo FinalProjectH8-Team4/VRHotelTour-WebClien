@@ -41,7 +41,7 @@ export default function FacilityDetail() {
     style={{
       background: 
       `linear-gradient(to top right, rgba(245, 246, 252, 0.52), rgba(82, 58, 115, 1), rgba(35, 8, 53, 1))`,
-      height: '75vh', 
+      height: '80vh', 
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       backgroundSize: "100% 100%",
@@ -51,11 +51,10 @@ export default function FacilityDetail() {
         <Carousel
           infiniteLoop={true}
           interval={2000}
-          swipeable={true}
-          axis='vertical'
+          swipeable={true}        
         >
           {facility.images.map((image, index) => (
-            <div key={index} style={{ height: '400px' }}>
+            <div key={index} style={{height:'500px'}}>
               <img src={image} alt="carousel" />
             </div>
           ))}
