@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import HotelDetail from './HotelDetail'
-import { Tab, Col, Row, Nav, Container, Button } from 'react-bootstrap'
+import { Tab, Nav, Button } from 'react-bootstrap'
+import superior from '../assets/rooms/superior.jpg'
+import deluxe from '../assets/rooms/deluxe.jpg'
+import premier from '../assets/rooms/premier.jpg'
+import { useSelector, useDispatch } from 'react-redux'
+import { fetchHotelById } from '../store/actions/actionHotel'
 
 export default function Test () {
     const history = useHistory()
-
+    const dispatch = useDispatch()
     function roomView(roomType) {
         history.push(`/room/${roomType}`)
     }
+
+    const hotel = useSelector((state) => state.hotel)
+
+    useEffect(() => {
+        dispatch(fetchHotelById('5fda55be9acbac7ff019610d'))
+    }, [])
 
     return (
         <div>
@@ -30,10 +41,10 @@ export default function Test () {
                             <Tab.Pane eventKey="superior">
                                 <div style={{ position: 'relative' }}>
                                     <div>
-                                        <img src="https://hdrihaven.com/files/hdri_images/tonemapped/1500/hotel_room.jpg" class="d-block w-100" alt="..." style={{ height: 400, borderRadius:10 }} />
+                                        <img src={superior} class="d-block w-100" alt="..." style={{ height: 400, borderRadius:10 }} />
                                     </div>
                                     <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', bottom: 0, zIndex: 99, width: '100%', height: '100%' }}>
-                                        <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('superior')} block style={{height: "100%", opacity: 0.7, color: '#241535'}}>Book This Room</Button>
+                                        <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('superior')} block style={{height: "100%", opacity: 0.7, color: '#241535'}}>View in VR</Button>
                                     </div>
                                 </div>
                             </Tab.Pane>
@@ -41,10 +52,10 @@ export default function Test () {
                             <Tab.Pane eventKey="deluxe">
                                 <div style={{ position: 'relative' }}>
                                     <div style={{ position: 'relative' }}>
-                                        <img src="https://www.samrohn.com/wp-content/uploads/le-meridien-bedroom-panorama.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
+                                        <img src={deluxe} class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
                                     </div>
                                     <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', bottom: 0, zIndex: 99, width: '100%', height: '100%' }}>
-                                        <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('deluxe')} block style={{height: "100%", opacity: 0.7, color: '#241535'}}>Book This Room</Button>
+                                        <Button type='button' variant="outline-light" size='lg' className='fw-bold' onClick={() => roomView('deluxe')} block style={{height: "100%", opacity: 0.7, color: '#241535'}}>View in VR</Button>
                                     </div>
                                 </div>
                             </Tab.Pane>
@@ -52,10 +63,10 @@ export default function Test () {
                             <Tab.Pane eventKey="premier">
                                 <div style={{ position: 'relative' }}>
                                     <div style={{ position: 'relative' }}>
-                                        <img src="https://1.bp.blogspot.com/-BCozCFZE7pg/XDIP0rJPFcI/AAAAAAAAAO0/vSFFbJgHKRcXDSiUCURHp41Eaix91qMyQCKgBGAs/s1600/HDRI-Hotel-Room.jpg" class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
+                                        <img src={premier} class="d-block w-100" alt="..." style={{ height: 400, width: "100%", borderRadius:10 }} />
                                     </div>
                                     <div className='d-flex justify-content-center align-items-center' style={{ position: 'absolute', bottom: 0, zIndex: 99, width: '100%', height: '100%' }}>
-                                        <Button type='button' variant="outline-light" size='lg' className='fw-bold' block style={{height: "100%", opacity: 0.7, color: '#241535'}}>Book This Room</Button>
+                                        <Button type='button' variant="outline-light" size='lg' className='fw-bold' block style={{height: "100%", opacity: 0.7, color: '#241535'}}>View in VR</Button>
                                     </div>
                                 </div>
                             </Tab.Pane>

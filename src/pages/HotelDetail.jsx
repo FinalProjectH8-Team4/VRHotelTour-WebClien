@@ -12,7 +12,7 @@ export default function HotelDetail() {
   const hotel = useSelector((state) => state.hotel)
 
   useEffect(() => {
-    dispatch(fetchHotelById('5fd83f9209fe494d61c1a7f2'))
+    dispatch(fetchHotelById('5fda55be9acbac7ff019610d'))
   }, [])
 
   function facilitiesClick(idx) {
