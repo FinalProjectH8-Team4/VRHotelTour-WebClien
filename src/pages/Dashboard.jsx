@@ -25,7 +25,7 @@ export default function Test() {
       <div
         style={{
           backgroundImage:
-            `linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(82, 58, 115, 1),rgba(35, 8, 53, 1), rgba(35, 8, 53, 1)),
+            `linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(245, 246, 252, 0.52), rgba(82, 58, 115, 1),rgba(35, 8, 53, 1), rgba(35, 8, 53, 1)),
                     url('https://images.pexels.com/photos/1662159/pexels-photo-1662159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')`,
           height: '70vh',
           backgroundPosition: "center",
@@ -105,14 +105,14 @@ export default function Test() {
             <div className="col-3 mt-3">
               <Nav variant="pills" className="flex-column text-center">
                 <Nav.Item >
-                  <Nav.Link eventKey="superior" style={{ height: '15vh', textAlign: 'left', marginBottom: 10 }}>Superior Room
+                  <Nav.Link eventKey="superior" style={{ height: '14vh', textAlign: 'left', marginBottom: 10 }}>Superior Room
                     <p style={{ fontSize: 10, textAlign: 'justify' }}>Decorated in a modern style, our Superior Rooms offer free WiFi, Smart TVs, writing desks and in-room tea and coffee making facilities.</p>
                   </Nav.Link>
                 </Nav.Item>
               </Nav>
               <Nav variant="pills" className="flex-column text-center">
                 <Nav.Item>
-                  <Nav.Link eventKey="deluxe" style={{ height: '15vh', textAlign: 'left', marginBottom: 10 }}>Duluxe Room
+                  <Nav.Link eventKey="deluxe" style={{ height: '14vh', textAlign: 'left', marginBottom: 10 }}>Duluxe Room
                     <p style={{ fontSize: 10, textAlign: 'justify' }}>Deluxe rooms are modern decorated, totally soundproofed and equipped with high speed internet access, USB ports , smart TV, room cleaning touch system.</p>
                   </Nav.Link>
                 </Nav.Item>
@@ -120,7 +120,7 @@ export default function Test() {
 
               <Nav variant="pills" className="flex-column text-center">
                 <Nav.Item>
-                  <Nav.Link eventKey="premier" style={{ height: '15vh', textAlign: 'left', marginBottom: 10 }}>Premier Twin Room
+                  <Nav.Link eventKey="premier" style={{ height: '14vh', textAlign: 'left', marginBottom: 10 }}>Premier Twin Room
                     <p style={{ fontSize: 10, textAlign: 'justify' }}>
                       Designed for families, our expansive and luxuriously appointed Premier Twin Rooms. With two double beds that can accommodate up to 2 adults and 2 children.
                     </p>
@@ -129,7 +129,7 @@ export default function Test() {
               </Nav>
               <Nav variant="pills" className="flex-column text-center">
                 <Nav.Item>
-                  <Nav.Link eventKey="family" style={{ height: '15vh', textAlign: 'left', marginBottom: 10 }}>Family Room
+                  <Nav.Link eventKey="family" style={{ height: '14vh', textAlign: 'left', marginBottom: 10 }}>Family Room
                     <p style={{ fontSize: 10, textAlign: 'justify' }}>
                     Modern decorated and offering comfortable hospitality to a family with 2 children, or a company of 4 adults. They are totally soundproofed and equipped with high tech comforts.
                     </p>

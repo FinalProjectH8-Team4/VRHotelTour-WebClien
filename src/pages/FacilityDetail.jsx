@@ -37,32 +37,48 @@ export default function FacilityDetail() {
   }
 
   return (
-    <div
-    style={{
-      background: 
-      `linear-gradient(to top right, rgba(245, 246, 252, 0.52), rgba(82, 58, 115, 1), rgba(35, 8, 53, 1))`,
-      height: '65vh', 
+    <div  style={{
+      backgroundImage:
+        `linear-gradient(to left bottom, rgba(245, 246, 252, 0.52), rgba(35, 8, 53, 1)),
+        url('https://www.jmberlin.de/sites/default/files/glashof-front_keyvisual.jpg')`,
+      height: '100vh',
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       backgroundSize: "100% 100%",
-      backgroundAttachment:"fixed"}}
+      backgroundAttachment: "fixed",
+      width: "100%"}}
     >
-      <div className="row">
-        <Carousel
-          infiniteLoop={true}
-          interval={2000}
-          swipeable={true}        
-        >
-          {facility.images.map((image, index) => (
-            <div key={index} style={{height:'50vh'}}>
-              <img src={image} alt="carousel" />
-            </div>
-          ))}
-        </Carousel>
+      {/* <div
+      style={{
+        background: 
+        `linear-gradient(to top right, rgba(245, 246, 252, 0.52), rgba(82, 58, 115, 1), rgba(35, 8, 53, 1))`,
+        height: '65vh', 
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "100% 100%",
+        backgroundAttachment:"fixed"}}
+        className="mt-3"
+      > */}
+      <div >
+        <div>
+          <Carousel
+            infiniteLoop={true}
+            interval={2000}
+            swipeable={true}        
+          >
+            {facility.images.map((image, index) => (
+              <div key={index} style={{height:'50vh'}}>
+                <img src={image} alt="carousel" />
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </div>
-      <div className="ml-5 mr-5 mt-3 row">
-        <h5 className='text-left' style={{color: '#4d3572', fontWeight: 'bold'}}>{facility.name}</h5>
-        <p style={{fontSize: 12}}>{facility.description}</p>
+      <div>
+        <div className="ml-5 mr-5" style={{width: '40%'}}>
+          <h5 className='text-left' style={{color: 'white', fontWeight: 'bold', fontStyle: 'italic'}}>{facility.name}</h5>
+          <p style={{fontSize: 14, color: 'white'}}>{facility.description}</p>
+        </div>
       </div>
     </div>
   )

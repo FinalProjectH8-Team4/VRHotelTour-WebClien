@@ -28,7 +28,7 @@ export default function HotelDetail() {
   }
   return (
     <div className="ml-5 mr-5 mt-3" style={{justifyContent: 'flex-start', alignItems: 'flex-start'}}>
-      <h2 className='text-center'>Our Facilities</h2>
+      <h5 className='text-center'>Our Facilities</h5>
       <div className='d-flex justify-content-center'>
         {hotel.facilities.map((facility, index) => (
           <FacilitiesIcon key={index} name={facility.name} index={index} facilitiesClick={facilitiesClick}/>

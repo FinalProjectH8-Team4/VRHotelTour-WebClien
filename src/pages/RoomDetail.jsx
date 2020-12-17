@@ -30,7 +30,17 @@ export default function RoomDetail() {
   }
 
   return (
-    <div style={{height: '100vh'}}>
+    <div  style={{
+      backgroundImage:
+        `linear-gradient(to left bottom, rgba(245, 246, 252, 0.52), rgba(245, 246, 252, 0.52), rgba(245, 246, 252, 0.52),rgba(35, 8, 53, 1), rgba(35, 8, 53, 1)),
+        url('https://www.jmberlin.de/sites/default/files/glashof-front_keyvisual.jpg')`,
+      height: '100vh',
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "100% 100%",
+      backgroundAttachment: "fixed",
+      width: "100%"}}
+    >
       <div className='full-height row'>
         <div className="col-9">
           {error &&
