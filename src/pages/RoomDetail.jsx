@@ -41,9 +41,9 @@ export default function RoomDetail() {
           <iframe src={`http://hotelimage.s3-ap-southeast-1.amazonaws.com/${roomType}/room.html`} width='100%' height='100%' frameborder="0"></iframe>
         </div>
         <div className="col-3 justify-content-center">
-          <h4 className='mt-5'>Room Informations</h4>
-          <p style={{textTransform:'capitalize'}}>Type : {roomType} Room</p>
-          <p style={{textTransform:'capitalize'}}>Price : Rp. {getRoomPrice()}</p>
+          <h4 className='mt-5 text-center'>Room Informations</h4>
+          <p style={{textTransform:'capitalize'}} className="text-center">Type : {roomType} Room</p>
+          <p style={{textTransform:'capitalize'}} className="text-center">Price : Rp. {getRoomPrice()}</p>
           <p className="mt-3 ml-5" style={{fontSize: 12}}>Enter your email to book this room</p>
           <input 
             type='email' 
@@ -54,7 +54,7 @@ export default function RoomDetail() {
             style={{width: "80%", height: 35, borderColor: '#231535'}}
           />
           <Button onClick={bookHandler} className="ml-4" style={{width: "80%"}}>Book This Room</Button>
-          <h5 className="mt-3 text-center">Facilities Included</h5>
+          <p className="mt-3 text-center" style={{fontWeight: 'bold'}}>Facilities Included</p>
           <Icons/>
         </div>
       </div>
