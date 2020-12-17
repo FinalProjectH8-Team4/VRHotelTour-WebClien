@@ -39,7 +39,7 @@ export default function FacilityDetail() {
   return (
     <div  style={{
       backgroundImage:
-        `linear-gradient(to left bottom, rgba(245, 246, 252, 0.52), rgb(187, 197, 196), rgba(35, 8, 53, 1)),
+        `linear-gradient(to left top, rgba(245, 246, 252, 0.52), rgb(187, 197, 196), rgba(35, 8, 53, 1)),
         url('https://www.jmberlin.de/sites/default/files/glashof-front_keyvisual.jpg')`,
       height: '100vh',
       backgroundPosition: "center",
@@ -76,8 +76,8 @@ export default function FacilityDetail() {
       </div>
       <div>
         <div className="ml-5 mr-5" style={{width: '40%'}}>
-          <h5 className='text-left' style={{color: 'white', fontWeight: 'bold', fontStyle: 'italic'}}>{facility.name}</h5>
-          <p style={{fontSize: 14, color: 'white'}}>{facility.description}</p>
+          <h5 className='text-left' style={{color: '#4d3572', fontWeight: 'bold', fontStyle: 'italic'}}>{facility.name}</h5>
+          <p style={{fontSize: 14, color: '#4d3572'}}>{facility.description}</p>
         </div>
       </div>
     </div>

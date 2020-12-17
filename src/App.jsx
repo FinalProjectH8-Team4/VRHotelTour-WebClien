@@ -12,10 +12,10 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Nav className="justify-content-start fixed-top" style={{backgroundImage: 'linear-gradient(to left, rgba(245, 246, 252, 0.52), rgb(187, 197, 196), rgba(35, 8, 53, 1), rgba(35, 8, 53, 1))'}}>
+        <Nav className="justify-content-start fixed-top" style={{backgroundImage: 'linear-gradient(to right, rgba(245, 246, 252, 0.52), rgb(187, 197, 196), rgba(35, 8, 53, 1), rgba(35, 8, 53, 1))'}}>
           <Nav.Item as={Link} to='/'>
             <div className="d-flex flex-row mt-3 ml-5">
-              <h2 style={{fontStyle: 'italic', color: 'white'}}>Inep</h2><h2 style={{fontWeight: 'bold', color: 'white'}}>Inn</h2>
+              <h2 style={{fontStyle: 'italic', color: '#4d3572'}}>Inep</h2><h2 style={{fontWeight: 'bold', color: '#4d3572'}}>Inn</h2>
             </div>
           </Nav.Item>
         </Nav>
