@@ -39,7 +39,7 @@ export default function FacilityDetail() {
   return (
     <div  style={{
       backgroundImage:
-        `linear-gradient(to left bottom, rgba(245, 246, 252, 0.52), rgba(35, 8, 53, 1)),
+        `linear-gradient(to left bottom, rgba(245, 246, 252, 0.52), rgb(187, 197, 196), rgba(35, 8, 53, 1)),
         url('https://www.jmberlin.de/sites/default/files/glashof-front_keyvisual.jpg')`,
       height: '100vh',
       backgroundPosition: "center",
