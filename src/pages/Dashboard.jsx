@@ -26,7 +26,7 @@ export default function Test() {
         style={{
           backgroundImage:
             `linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(245, 246, 252, 0.52), rgba(82, 58, 115, 1),rgba(35, 8, 53, 1), rgba(35, 8, 53, 1)),
-                    url('https://images.pexels.com/photos/1662159/pexels-photo-1662159.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')`,
+                    url('https://www.jmberlin.de/sites/default/files/glashof-front_keyvisual.jpg')`,
           height: '70vh',
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
